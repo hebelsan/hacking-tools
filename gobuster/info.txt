@@ -1,0 +1,9 @@
+
+https://github.com/OJ/gobuster
+
+gobuster dir -u https://example.com -w /wordlists/Discovery/Web-Content/common.txt
+
+# use vhost if inspecting not a real server but only over /etc/hosts
+gobuster vhost --append-domain -u http://thetoppers.htb -w ./subdomains-top1mil-20000.txt -t 100
+
+gobuster dns -d thetoppers.htb -t 100 -w subdomains-top1mil-20000.txt

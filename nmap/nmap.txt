@@ -1,0 +1,32 @@
+## Port scanning
+
+# Fast scan
+nmap -F localhost
+
+# Agressive scan and timing template 4 (aggressive)
+nmap -A -T4 localhost
+
+# Scan all ports (or -p-)
+nmap -p '*' localhost
+
+# Detect service/daemon versions
+nmap -sV localhost
+
+# Scan for vulnerabilities
+nmap -Pn --script vuln localhost
+
+# without ping
+nmap -Pn localhost
+
+# script scan using a default set of scripts
+nmap -sC localhost
+
+# good general aggressive call
+nmap -p- -A -sV -sC -Pn -T4 host
+
+# check tls an ssl on https port
+nmap -p 443 --script ssl-enum-ciphers host
+
+# it's always a good thing to turn on -v (verbose) to see what is happening
+
+# to speed up the first scan --min-rate=10000
