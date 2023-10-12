@@ -1,7 +1,7 @@
 ## Port scanning
 
 ### IPSEC's scan
-nmap -sC -sV -oA scan.txt IP
+mkdir nmap && nmap -sC -sV -oA nmap/scan 10.10.11.230
 
 ### Fast scan
 nmap -F IP
