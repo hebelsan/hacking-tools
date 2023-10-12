@@ -1,28 +1,31 @@
 ## Port scanning
 
+# IPSEC's scan
+nmap -sC -sV -oA scan.txt IP
+
 # Fast scan
-nmap -F localhost
+nmap -F IP
 
 # Agressive scan and timing template 4 (aggressive)
-nmap -A -T4 localhost
+nmap -A -T4 IP
 
 # Scan all ports (or -p-)
-nmap -p '*' localhost
+nmap -p '*' IP
 
 # Detect service/daemon versions
-nmap -sV localhost
+nmap -sV IP
 
 # Scan for vulnerabilities
-nmap -Pn --script vuln localhost
+nmap -Pn --script vuln IP
 
 # without ping
-nmap -Pn localhost
+nmap -Pn IP
 
 # script scan using a default set of scripts
-nmap -sC localhost
+nmap -sC IP
 
 # good general aggressive call
-nmap -p- -A -sV -sC -Pn -T4 host
+nmap -p- -A -sV -sC -Pn -T4 IP
 
 # check tls an ssl on https port
 nmap -p 443 --script ssl-enum-ciphers host
