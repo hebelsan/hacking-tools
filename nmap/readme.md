@@ -32,4 +32,4 @@ nmap -p 443 --script ssl-enum-ciphers host
 
 ### it's always a good thing to turn on -v (verbose) to see what is happening
 
-# to speed up the first scan --min-rate=10000
+### to speed up the first scan --min-rate=10000
