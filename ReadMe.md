@@ -12,3 +12,4 @@ gobuster dir -u https://www.test.com -w /usr/share/wordlists/big.txt
 - check if code xss is possible (command, sql or template injection)
 > To identify SSTI: `${{<%[%'"}}%\.`  
 > sql injection with sqlmap
+- check versions of software and cve's
