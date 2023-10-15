@@ -4,7 +4,7 @@
 - check which bin user can run as sudo
 > sudo -l
 
-- check thos bins on gtfobins
+- check those bins on gtfobins
 > https://gtfobins.github.io/
 
 - find all files belonging to user - filter and ignore errors
