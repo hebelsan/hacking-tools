@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Reverse Shell as a Service
 # https://github.com/lukechilds/reverse-shell
 #
