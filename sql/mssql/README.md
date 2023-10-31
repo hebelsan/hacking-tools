@@ -16,5 +16,7 @@ RECONFIGURE
 sp_configure 'xp_cmdshell', '1'
 RECONFIGURE
 ```
-
-
+what also works:
+```bash
+xp_cmdshell 'whoami'
+```
