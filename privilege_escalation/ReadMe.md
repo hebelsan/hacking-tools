@@ -1,3 +1,4 @@
+## Linux
 - check if secrets are in environment
 > env or printenv
 
@@ -15,4 +16,19 @@
 
 - check kernel version (might is old and has CVE)
 > uname -a
+
+- check bash history in .bash_history
+
+- run linPEAS
+
+## windows
+
+- check the file `ConsoleHost_history.txt` which holds a history of recent Windows PowerShell commands executed
+
+- run winPEAS
+
+- all checks are explained here: https://book.hacktricks.xyz/windows-hardening/checklist-windows-privilege-escalation
+
+- if credentials found run `psexec.py` from the Impacket suite to get a shell as the administrator
+> impacket-psexec administrator@{TARGET_IP}
 
