@@ -1,0 +1,1 @@
+winPEAS binaries are in https://www.kali.org/tools/peass-ng/
