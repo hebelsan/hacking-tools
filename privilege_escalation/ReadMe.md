@@ -8,16 +8,30 @@
 - check those bins on gtfobins
 > https://gtfobins.github.io/
 
+- find all files in home directoy with nice print
+> find /home -type f -printf "%f\t%p\t%u\t%g\t%m\n" 2>/dev/null | column -t
+
 - find all files belonging to user - filter and ignore errors
 > find / -user <USER> 2>/dev/null | grep -v '^/sys\|^/proc\|^/run'
 
-- find all files in home directoy with nice print
-> find /home -type f -printf "%f\t%p\t%u\t%g\t%m\n" 2>/dev/null | column -t
+- check if source code contains passwords, -i means ignore-case, -a handles binary like text files
+```
+cat * | grep -i -a passw*
+# or
+grep -r 'passw' .
+```
 
 - check kernel version (might is old and has CVE)
 > uname -a
 
 - check bash history in .bash_history
+
+- find binary within a group
+> uid=1000(robert) gid=1000(robert) groups=1000(robert),1001(bugtracker)  
+> find / -group bugtracker 2>/dev/null
+
+- check for binary with Setuid: `ls -l /usr/bin/bugtracker` this means the file always runs under the user who owns the file, in this case root
+> -rwsr-xr-- 1 root
 
 - run linPEAS
 
