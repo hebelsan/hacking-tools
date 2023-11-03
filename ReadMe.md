@@ -5,6 +5,9 @@
 mkdir nmap && nmap -sC -sV -oA nmap/scan 10.10.11.230
 ```
 
+## efficiency
+when targeting multiple machines in network it may be wise to use a tool like `autorecon`
+
 ## webservice
 - find hidden dirs with gobuster (use special wordlist if know which server e.g. spring):
 ```
