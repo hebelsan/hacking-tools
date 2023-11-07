@@ -2,6 +2,9 @@
 - check if secrets are in environment
 > env or printenv
 
+- check running processes
+> ps aux
+
 - check which bin user can run as sudo
 > sudo -l
 

@@ -1,6 +1,6 @@
 # put hashes with new line seperator in a file hashes.txt
 
-# first identify the hash type with the first characters
+# first identify the hash type with the first characters or use hashid
 hashcat --help | grep -I '$2'
 
 # with e.g. 3200 bcrypt blowfish unix
