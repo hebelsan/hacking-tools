@@ -36,7 +36,7 @@ grep -r 'passw' .
 - check for binary with Setuid: `ls -l /usr/bin/bugtracker` this means the file always runs under the user who owns the file, in this case root
 > -rwsr-xr-- 1 root
 
-- run linPEAS
+- run linPEAS with -a (all checks) to don't miss things like cronjobs which are executed every minute!
 
 ## windows
 
