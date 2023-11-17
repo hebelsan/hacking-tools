@@ -19,6 +19,8 @@ gobuster dir -u https://www.test.com -w /usr/share/wordlists/big.txt
 gobuster vhost -u http://thetoppers.htb -w /usr/share/wordlists/seclists/Discovery/DNS/subdomains.txt -t 100
 ```
 
+- check default credentials for proprietary software!
+
 - check website code html and javascript
 
 - check if code xss is possible (command, sql or template injection)
