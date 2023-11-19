@@ -19,8 +19,6 @@ gobuster dir -u https://www.test.com -w /usr/share/wordlists/big.txt
 gobuster vhost -u http://thetoppers.htb -w /usr/share/wordlists/seclists/Discovery/DNS/subdomains.txt -t 100
 ```
 
-- check default credentials for proprietary software!
-
 - check website code html and javascript
 
 - check if code xss is possible (command, sql or template injection)
@@ -30,3 +28,9 @@ gobuster vhost -u http://thetoppers.htb -w /usr/share/wordlists/seclists/Discove
 - check versions of software and cve's
 
 - check dirs and files of web server type e.g. apache2
+
+### web login
+
+- check default login credentials for proprietary software!
+
+- try admin/admin or root/root
