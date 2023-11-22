@@ -1,4 +1,11 @@
-## None algorithm
+## generate jwts
+
+https://www.scottbrady91.com/tools/jwt
+
+## attacks
+
+
+### None algorithm
 
 JWT supports a “none” algorithm. If the alg field is set to “none”, any token would be considered valid if their signature section is set to empty. For example, the following token would be considered valid:
 
@@ -16,7 +23,7 @@ It is simply the base64url encoded versions of these two blobs, and no signature
 }
 ```
 
-## HMAC algorithm
+### HMAC algorithm
 
 The two most common types of algorithms used for JWTs are HMAC and RSA. With HMAC, the token would be signed with a key, then later verified with the same key. As for RSA, the token would first be created with a private key, then verified with the corresponding public key.
 
