@@ -8,6 +8,13 @@ smbclient -N -L \\\\{TARGET_IP}\\
 -L : This option allows you to look at what services are available on a server
 ```
 
+or with slightly different output:
+
+```bash
+# -u "guest" or empty
+enum4linux -a -u "guest" -p "" 10.10.11.241
+```
+
 ## list shares
 ```bash
 smbclient -L \\\\10.129.112.234
