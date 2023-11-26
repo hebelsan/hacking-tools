@@ -10,7 +10,7 @@ hashcat --help | grep -I '$2'
 
 - --potfile-disabled: The potfile stores which hashes were already cracked, and thus won't be cracked again
 ```bash
-hashcat -w 3200 hashes.txt rockyou.txt --potfile-disable
+hashcat -m 3200 hashes.txt rockyou.txt --potfile-disable
 ```
 
 ## using mask mode
