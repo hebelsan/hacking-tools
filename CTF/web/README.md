@@ -11,3 +11,4 @@ check:
 - security tab, certificates
 - whenever you see a long weird string (even in paths) -> try to crack it
 - iterate id's in url
+- check dirs and vhosts with gobuster
