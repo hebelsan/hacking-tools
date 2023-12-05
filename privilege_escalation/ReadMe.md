@@ -33,8 +33,8 @@ grep -r 'passw' .
 > uid=1000(robert) gid=1000(robert) groups=1000(robert),1001(bugtracker)  
 > find / -group bugtracker 2>/dev/null
 
-- check for binary with Setuid: `ls -l /usr/bin/bugtracker` this means the file always runs under the user who owns the file, in this case root
-> -rwsr-xr-- 1 root
+- check for binaries with Setuid(suid): `ls -l /usr/bin/bugtracker` returns `-rwsr-xr-- 1 root` this means the file always runs under the user who owns the file, in this case root.
+To find all suid files run `find / -perm /4000 2>/dev/null`
 
 - `pspy` to do unprivileged Linux process snooping
 
