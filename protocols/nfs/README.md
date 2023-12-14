@@ -33,11 +33,18 @@ For more info: https://book.hacktricks.xyz/network-services-pentesting/nfs-servi
 ### check if share is available to mount
 
 ```bash
-showmount -e <IP>
+sudo showmount -e <IP>
 ```
-if available mount:
+
+if mount available:
 
 ```bash
 mkdir /tmp
-mount -t nfs <IP>:/home /tmp
+sudo mount -t nfs <IP>:/home /tmp
+```
+
+check if mounted:
+
+```bash
+df -k
 ```
