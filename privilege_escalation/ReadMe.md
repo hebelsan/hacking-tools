@@ -44,6 +44,8 @@ grep -r 'passw' .
 
 - `pspy` to do unprivileged Linux process snooping
 
+- In case you can run any perl application as sudo check [perl startup privilege escalation](https://medium.com/@DGclasher/privilege-escalation-through-perl-environment-variables-349b39ca01)
+
 - run linPEAS
 
 ## windows
