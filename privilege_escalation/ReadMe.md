@@ -6,7 +6,14 @@
 > ps aux
 
 - check which bin user can run as sudo
-> sudo -l
+```bash
+sudo -l
+# if `sudo -l` returns (ALL : ALL) ALL -> just run `sudo su` and you are root
+# to remove users from sudo
+sudo deluser USER sudo
+# to check sudo rights for other users
+sudo -l -U USER
+```
 
 - To find all suid (this means the file always runs under the user who owns the file, in this case root) files run: 
 ```bash

