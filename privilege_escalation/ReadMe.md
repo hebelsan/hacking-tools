@@ -43,6 +43,9 @@ grep -r 'passw' .
 - check kernel version (might is old and has CVE)
 > uname -a
 
+- check cronjobs of the **current user**
+> crontab -l
+
 - check bash history in .bash_history
 
 - find binary within a group
@@ -50,6 +53,12 @@ grep -r 'passw' .
 > find / -group bugtracker 2>/dev/null
 
 - `pspy` to do unprivileged Linux process snooping
+
+- check all system services that are enabled and if there's something malicious
+```bash
+systemctl list-unit-files | grep enabled
+# services are stored in /etc/systemd/system
+```
 
 - In case you can run any perl application as sudo check [perl startup privilege escalation](https://medium.com/@DGclasher/privilege-escalation-through-perl-environment-variables-349b39ca01)
 
