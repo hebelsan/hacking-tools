@@ -35,9 +35,9 @@ find / -user <USER> 2>/dev/null | grep -v '^/sys\|^/proc\|^/run'
 
 - check if source code contains passwords, -i means ignore-case, -a handles binary like text files
 ```bash
-cat * | grep -i -a passw*
-# or
-grep -r 'passw' .
+grep -arin 'password' .
+# if too much output try with regex:
+grep -arin -o -E '(\w+\W+){0,5}password(\W+\w+){0,5}'
 ```
 
 - check kernel version (might is old and has CVE)
