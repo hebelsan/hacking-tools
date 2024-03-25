@@ -11,3 +11,7 @@ Steganography is the practice of representing information within another message
 
 ## fix corrupted jpeg file
 see jpeg header explanation: https://yasoob.me/posts/understanding-and-writing-jpeg-decoder-in-python/ and use hex editor to manipulate
+
+## mp3
+extract phone number in audio file: https://github.com/ribt/dtmf-decoder
+-> after that probably use t9 decoder
