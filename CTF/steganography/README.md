@@ -16,6 +16,9 @@ see jpeg header explanation: https://yasoob.me/posts/understanding-and-writing-j
 extract phone number in audio file: https://github.com/ribt/dtmf-decoder
 -> after that probably use t9 decoder
 
+## PDF
+Text in PDF files is encoded but we can make use tools like `pdfgrep "flag" ApocalypseNewspaper.pdf` to find strings in a pdf. 
+
 ## Polyglot
 often pfd and png in one file.
 use pdf ending and open with browser, then change to png and.
