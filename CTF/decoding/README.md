@@ -24,3 +24,10 @@ This command reads the contents of input_file in binary format and then converts
 
 - https://de.wikipedia.org/wiki/Text_on_9_keys  
 - 22 33 8 8 33 777 222 2 88 555 7777 2 88 555 -> translates to "better*call*saul*"
+
+## Morse
+
+Text in the following pattern is Morse encoded:
+```
+.- / .--. .... --- -. . / .. ... / .... .. -.. -.. . -. / .. -. / - .... . / -.. .-. .- .-- . .-. / ..- -. -.. . .-. / - .... . / .-. .- -.. .. --- .-.-.-
+ ```
